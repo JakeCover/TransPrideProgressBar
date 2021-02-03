@@ -1,17 +1,19 @@
 <idea-plugin>
   <id>com.cobular.transprideprogressbar</id>
   <name>Trans Pride Progress Bar</name>
-  <version>1.0</version>
+  <version>1.1</version>
   <idea-version since-build="192"/>
   <vendor email="julie@isrly.gay">Julie</vendor>
 
   <description><![CDATA[
       A plugin to make intellij progress bars trans. <br>
       Forked from the oh-so-popular nyan cat progress bars plugin <br>
-      (https://plugins.jetbrains.com/plugin/8575-nyan-progress-bar / https://github.com/batya239/NyanProgressBar)
+      (https://plugins.jetbrains.com/plugin/8575-nyan-progress-bar / https://github.com/batya239/NyanProgressBar) <br>
+      I'll add color customization for other pride flags soon™
     ]]></description>
 
   <change-notes><![CDATA[
+      <em>1.1 I'm a shitty trans girl and messed up the color order somehow. Thanks Gillian!!</em><br>
       <em>1.0 Created the Plugin!</em><br>
     ]]>
   </change-notes>

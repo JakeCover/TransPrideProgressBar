@@ -73,9 +73,10 @@ public class TransProgressBarUi extends BasicProgressBarUI {
         int h = c.getPreferredSize().height;
         if (!isEven(c.getHeight() - h)) h++;
 
+
         LinearGradientPaint baseTransPaint = new LinearGradientPaint(0, JBUI.scale(2), 0, h - JBUI.scale(6),
                 new float[]{ONE_OVER_FIVE * 1, ONE_OVER_FIVE * 2, ONE_OVER_FIVE * 3, ONE_OVER_FIVE * 4, ONE_OVER_FIVE * 5},
-                new Color[]{PINK, BLUE, Color.WHITE, BLUE, PINK});
+                new Color[]{BLUE, PINK, Color.WHITE, PINK, BLUE});
 
         g.setPaint(baseTransPaint);
 
@@ -95,8 +96,8 @@ public class TransProgressBarUi extends BasicProgressBarUI {
         Paint old = g.getPaint();
         g.setPaint(baseTransPaint);
 
-        final float R = JBUI.scale(8f);
-        final float R2 = JBUI.scale(9f);
+        final float R = JBUI.scale(8) ;
+        final float R2 = JBUI.scale(9);
         final Area containingRoundRect = new Area(new RoundRectangle2D.Float(1f, 1f, w - 2f, h - 2f, R, R));
 //        while (x < Math.max(c.getWidth(), c.getHeight())) {
 //            Path2D.Double path = new Path2D.Double();
@@ -192,9 +193,9 @@ public class TransProgressBarUi extends BasicProgressBarUI {
             g.fillRect(0, 0, w, h);
         }
 
-        final float R = JBUI.scale(8f);
-        final float R2 = JBUI.scale(9f);
-        final float off = JBUI.scale(1f);
+        final float R = JBUI.scale(8);
+        final float R2 = JBUI.scale(9);
+        final float off = JBUI.scale(1);
 
         g2.translate(0, (c.getHeight() - h) / 2);
         g2.setColor(progressBar.getForeground());
@@ -204,9 +205,9 @@ public class TransProgressBarUi extends BasicProgressBarUI {
 //        g2.setColor(progressBar.getForeground());
         g2.setPaint(new LinearGradientPaint(0, JBUI.scale(2), 0, h - JBUI.scale(6),
                 new float[]{ONE_OVER_FIVE * 1, ONE_OVER_FIVE * 2, ONE_OVER_FIVE * 3, ONE_OVER_FIVE * 4, ONE_OVER_FIVE * 5},
-                new Color[]{PINK, BLUE, Color.WHITE, BLUE, PINK}));
+                new Color[]{BLUE, PINK, Color.WHITE, PINK, BLUE}));
 
-        g2.fill(new RoundRectangle2D.Float(2f * off, 2f * off, amountFull - JBUI.scale(5f), h - JBUI.scale(5f), JBUI.scale(7f), JBUI.scale(7f)));
+        g2.fill(new RoundRectangle2D.Float(2f * off, 2f * off, amountFull - JBUI.scale(5), h - JBUI.scale(5), JBUI.scale(7), JBUI.scale(7)));
         g2.translate(0, -(c.getHeight() - h) / 2);
 
         // Deal with possible text painting
